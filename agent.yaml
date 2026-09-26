@@ -1,6 +1,5 @@
 spec_version: "0.1.0"
 name: "resume-job-matching-agent"
-display_name: "ResumeJobMatchingAgent"
 version: "1.0.0"
 description: "Framework-independent portable agent for resume profiling, job posting analysis, skill matching, qualification gap analysis, and application-readiness reporting."
 author: "HiDevs Community"
@@ -37,11 +36,3 @@ tools:
   - "compatibility_analyzer_tool"
   - "recommendation_tool"
   - "matching_report_tool"
-
-entrypoint:
-  adapter: "adapters.portable_adapter.PortableAdapter"
-  core: "core.agent_core.AgentCore"
-
-portability:
-  framework_independent: true
-  offline_capable: true

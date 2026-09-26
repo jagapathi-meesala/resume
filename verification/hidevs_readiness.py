@@ -40,6 +40,10 @@ class HiDevsReadinessChecker:
                     name = data.get("name", "")
                     if name != "resume-job-matching-agent":
                         issues.append(f"agent.yaml name must be 'resume-job-matching-agent', got '{name}'")
+                    allowed_keys = {"spec_version", "name", "version", "description", "author", "license", "tools", "model", "extends", "dependencies", "skills", "agents", "delegation", "runtime", "a2a", "compliance", "tags", "metadata"}
+                    extra_keys = set(data.keys()) - allowed_keys
+                    if extra_keys:
+                        issues.append(f"agent.yaml contains unauthorized additional properties: {extra_keys}")
             except Exception as e:
                 issues.append(f"Error parsing agent.yaml: {str(e)}")
 

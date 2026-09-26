@@ -1,0 +1,10 @@
+name: "job-description-profiler-tool"
+description: "Extract required skills, preferred skills, and experience expectations from job description."
+input_schema:
+  type: "object"
+  properties:
+    job_description:
+      type: "string"
+      description: "The job description content as text or structured JSON"
+  required:
+    - "job_description"

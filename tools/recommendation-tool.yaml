@@ -1,0 +1,21 @@
+name: "recommendation-tool"
+description: "Generate practical resume enhancement and job-fit recommendations."
+input_schema:
+  type: "object"
+  properties:
+    resume_profile:
+      type: "object"
+    job_profile:
+      type: "object"
+    skill_matches:
+      type: "object"
+    gaps:
+      type: "object"
+    compatibility_score:
+      type: "object"
+  required:
+    - "resume_profile"
+    - "job_profile"
+    - "skill_matches"
+    - "gaps"
+    - "compatibility_score"

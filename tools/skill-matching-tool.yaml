@@ -1,0 +1,12 @@
+name: "skill-matching-tool"
+description: "Compare resume skills against job requirements with match classification."
+input_schema:
+  type: "object"
+  properties:
+    resume_profile:
+      type: "object"
+    job_profile:
+      type: "object"
+  required:
+    - "resume_profile"
+    - "job_profile"

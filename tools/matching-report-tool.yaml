@@ -1,0 +1,24 @@
+name: "matching-report-tool"
+description: "Produce a structured final report summarizing profiles, matches, gaps, and recommendations."
+input_schema:
+  type: "object"
+  properties:
+    resume_profile:
+      type: "object"
+    job_profile:
+      type: "object"
+    skill_matches:
+      type: "object"
+    gaps:
+      type: "object"
+    compatibility_score:
+      type: "object"
+    recommendations:
+      type: "object"
+  required:
+    - "resume_profile"
+    - "job_profile"
+    - "skill_matches"
+    - "gaps"
+    - "compatibility_score"
+    - "recommendations"

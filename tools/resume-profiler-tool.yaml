@@ -1,0 +1,10 @@
+name: "resume-profiler-tool"
+description: "Extract structured skills, education, experience, and certifications from resume."
+input_schema:
+  type: "object"
+  properties:
+    resume:
+      type: "string"
+      description: "The resume content as text or structured JSON"
+  required:
+    - "resume"

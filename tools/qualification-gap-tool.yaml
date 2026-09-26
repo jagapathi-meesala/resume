@@ -1,0 +1,15 @@
+name: "qualification-gap-tool"
+description: "Identify missing requirements and experience gaps without inventing data."
+input_schema:
+  type: "object"
+  properties:
+    resume_profile:
+      type: "object"
+    job_profile:
+      type: "object"
+    skill_matches:
+      type: "object"
+  required:
+    - "resume_profile"
+    - "job_profile"
+    - "skill_matches"

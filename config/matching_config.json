@@ -1,0 +1,34 @@
+{
+  "version": "1.0.0",
+  "weights": {
+    "required_skills": 0.40,
+    "preferred_skills": 0.20,
+    "experience_alignment": 0.20,
+    "education_alignment": 0.10,
+    "certification_alignment": 0.10
+  },
+  "skill_aliases": {
+    "js": "javascript",
+    "ts": "typescript",
+    "py": "python",
+    "postgres": "postgresql",
+    "k8s": "kubernetes",
+    "react.js": "react",
+    "reactjs": "react",
+    "node.js": "node",
+    "nodejs": "node",
+    "aws": "amazon web services",
+    "gcp": "google cloud platform",
+    "azure": "microsoft azure"
+  },
+  "skill_categories": {
+    "programming_languages": ["python", "javascript", "typescript", "java", "c++", "go", "rust", "ruby", "sql", "html", "css"],
+    "frameworks": ["react", "vue", "angular", "django", "fastapi", "flask", "express", "next.js", "spring boot"],
+    "databases": ["postgresql", "mysql", "mongodb", "redis", "dynamodb", "elasticsearch"],
+    "tools_and_platforms": ["docker", "kubernetes", "git", "aws", "gcp", "azure", "jenkins", "terraform", "linux"]
+  },
+  "score_thresholds": {
+    "high_match": 80.0,
+    "moderate_match": 50.0
+  }
+}

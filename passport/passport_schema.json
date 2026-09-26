@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AgentPassportSchema",
+  "type": "object",
+  "required": [
+    "agent_id",
+    "name",
+    "display_name",
+    "version",
+    "description",
+    "capabilities",
+    "tools",
+    "lifecycle_phases",
+    "portability"
+  ],
+  "properties": {
+    "agent_id": { "type": "string" },
+    "name": { "type": "string" },
+    "display_name": { "type": "string" },
+    "version": { "type": "string" },
+    "description": { "type": "string" },
+    "author": { "type": "string" },
+    "license": { "type": "string" },
+    "capabilities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "description", "tool"],
+        "properties": {
+          "name": { "type": "string" },
+          "description": { "type": "string" },
+          "tool": { "type": "string" }
+        }
+      }
+    },
+    "tools": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "lifecycle_phases": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "portability": {
+      "type": "object",
+      "required": ["framework_independent", "offline_capable"],
+      "properties": {
+        "framework_independent": { "type": "boolean" },
+        "offline_capable": { "type": "boolean" }
+      }
+    },
+    "verification_status": { "type": "object" }
+  }
+}

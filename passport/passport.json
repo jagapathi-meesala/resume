@@ -1,0 +1,79 @@
+{
+  "agent_id": "resume-job-matching-agent-01",
+  "name": "resume-job-matching-agent",
+  "display_name": "ResumeJobMatchingAgent",
+  "version": "1.0.0",
+  "description": "Portable framework-independent AI agent for resume profiling, job description profiling, skill matching, qualification gap analysis, compatibility scoring, and application-readiness reporting.",
+  "author": "HiDevs Community",
+  "license": "MIT",
+  "capabilities": [
+    {
+      "name": "resume_profiling",
+      "description": "Extract structured skills, experience, education, and credentials from a resume.",
+      "tool": "resume_profiler_tool"
+    },
+    {
+      "name": "job_description_profiling",
+      "description": "Extract required skills, preferred skills, responsibilities, and experience requirements from a job description.",
+      "tool": "job_description_profiler_tool"
+    },
+    {
+      "name": "skill_matching",
+      "description": "Perform explainable comparison between candidate resume skills and job description skills.",
+      "tool": "skill_matching_tool"
+    },
+    {
+      "name": "qualification_gap_analysis",
+      "description": "Identify missing requirements and experience gaps without fabricating data.",
+      "tool": "qualification_gap_tool"
+    },
+    {
+      "name": "compatibility_analysis",
+      "description": "Calculate a deterministic, explainable compatibility score based on configurable criteria.",
+      "tool": "compatibility_analyzer_tool"
+    },
+    {
+      "name": "recommendation_generation",
+      "description": "Generate practical resume enhancement and job-fit recommendations based on evidence.",
+      "tool": "recommendation_tool"
+    },
+    {
+      "name": "matching_report",
+      "description": "Produce a comprehensive structured compatibility report summarizing profiles, matches, gaps, and recommendations.",
+      "tool": "matching_report_tool"
+    }
+  ],
+  "tools": [
+    "resume_profiler_tool",
+    "job_description_profiler_tool",
+    "skill_matching_tool",
+    "qualification_gap_tool",
+    "compatibility_analyzer_tool",
+    "recommendation_tool",
+    "matching_report_tool"
+  ],
+  "lifecycle_phases": [
+    "INPUT",
+    "REQUEST_VALIDATION",
+    "PASSPORT_LOADING",
+    "CAPABILITY_VALIDATION",
+    "TOOL_DISCOVERY",
+    "RESUME_PROFILING",
+    "JOB_PROFILING",
+    "SKILL_MATCHING",
+    "GAP_ANALYSIS",
+    "COMPATIBILITY_ANALYSIS",
+    "RECOMMENDATION_GENERATION",
+    "REPORT_GENERATION",
+    "RESULT_VALIDATION",
+    "RESPONSE_GENERATION"
+  ],
+  "portability": {
+    "framework_independent": true,
+    "offline_capable": true
+  },
+  "verification_status": {
+    "passport_verified": true,
+    "verification_source": "local_passport_trust_verifier"
+  }
+}
